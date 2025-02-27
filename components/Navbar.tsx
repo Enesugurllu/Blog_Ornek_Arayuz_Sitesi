@@ -71,19 +71,19 @@ const Navbar: React.FC = () => {
         <div className="relative group"
              onMouseEnter={() => handleMouseEnter('about')}
              onMouseLeave={handleMouseLeave}>
-          <button className="text-gray-300 hover:text-blue-500 text-lg font-medium pb-2 flex items-center">
+          <Link href="/hakkimda" className="text-gray-300 hover:text-blue-500 text-lg font-medium pb-2 flex items-center">
             About Me
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
-          </button>
+          </Link>
           {activeDropdown === 'about' && (
             <div className="absolute left-0 -mt-1 w-48 rounded-xl bg-[#0f172a] border border-gray-700 shadow-xl">
               <div className="py-2">
                 {menuItems.about.map((item: string, index: number) => (
                   <Link
                     key={index}
-                    href="#"
+                    href={item === 'Hakkımda' ? '/Project' : '#'}
                     className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-blue-500 first:rounded-t-xl last:rounded-b-xl"
                   >
                     {item}
@@ -93,6 +93,7 @@ const Navbar: React.FC = () => {
             </div>
           )}
         </div>
+
 
         {/* Category Dropdown */}
         <div className="relative group"

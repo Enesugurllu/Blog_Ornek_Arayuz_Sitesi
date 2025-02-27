@@ -4,6 +4,9 @@ import Hero from '../components/Hero'
 import HotTopics from '../components/HotTopics'
 import EditorsPicks from '../components/EditorsPicks'
 import PopularTags from '../components/PopularTags'
+import Footer from '../components/Footer'
+
+
 
 const page = () => {
   return (
@@ -15,6 +18,7 @@ const page = () => {
         <EditorsPicks />
         <PopularTags />
       </main>
+      <Footer/>
     </div>
   )
 }

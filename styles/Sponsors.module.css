@@ -1,0 +1,24 @@
+.carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+}
+
+.carouselTrack {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 2rem;
+}
+
+.carouselItem {
+  flex: 0 0 20%;
+  min-width: 20%;
+}
+
+@media (max-width: 768px) {
+  .carouselItem {
+    flex: 0 0 50%;
+    min-width: 50%;
+  }
+}
