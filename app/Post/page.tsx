@@ -15,8 +15,8 @@ const page = () => {
   return (
     <div className="min-h-screen bg-[#0f172a] dark:bg-navy-900">
       <Navbar/>
-      {/* Navbar'ın altında kalan içerik için pt-32 (padding-top) eklendi */}
-      <div className="pt-32"> {/* Yeni div eklendi */}
+      {/* Navbar'ın altında kalan içerik için pt-24 (padding-top) eklendi */}
+      <div className="pt-24">
         <Breadcrumb />
         <Title/>
         
