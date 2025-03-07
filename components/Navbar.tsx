@@ -138,7 +138,7 @@ const Navbar: React.FC = () => {
                 {menuItems.singlePost.map((item: string, index: number) => (
                   <Link
                     key={index}
-                    href="#"
+                    href={item === 'Son Gönderiler' ? '/Post' : '#'}
                     className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-blue-500 first:rounded-t-xl last:rounded-b-xl"
                   >
                     {item}
@@ -242,4 +242,4 @@ const Navbar: React.FC = () => {
   )
 }
 
-export default Navbar 
+export default Navbar

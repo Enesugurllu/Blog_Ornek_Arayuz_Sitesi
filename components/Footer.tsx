@@ -10,19 +10,13 @@ const Footer: React.FC = () => {
 
   return (
     <div className="bg-gray-900 text-white px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto py-16 max-w-6xl">
+      <div className="max-w-7xl mx-auto py-16">
         <footer className="bg-gray-800 rounded-lg p-8 sm:p-10">
           <div className="flex flex-wrap justify-between gap-6">
             {/* Genz Section */}
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
               <div className="flex items-center mb-3">
-                <img
-                  src="https://storage.googleapis.com/a1aa/image/plK_jOPFRtlTMQ_Xu_qNIG70UXL-24qQuVk4L0ZaLog.jpg"
-                  alt="Genz logo"
-                  className="mr-2"
-                  width={28}
-                  height={28}
-                />
+                <i className="fas fa-cube text-cyan-400 text-3xl mr-2"></i>
                 <span className="text-lg font-bold">Genz</span>
               </div>
               <p className="text-gray-400 text-xs mb-3">
@@ -92,17 +86,20 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-8 border-t border-gray-700 pt-4 flex justify-between items-center">
+          <div className="mt-8 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-xs">© {new Date().getFullYear()} Created by AllThemes.com</p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-cyan-400 text-xs">
-                <i className="fab fa-twitter"></i> Twitter
+            <div className="flex space-x-6">
+              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300">
+                <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" className="text-gray-400 hover:text-cyan-400 text-xs">
-                <i className="fab fa-linkedin"></i> LinkedIn
+              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300">
+                <i className="fab fa-twitter"></i>
               </a>
-              <a href="#" className="text-gray-400 hover:text-cyan-400 text-xs">
-                <i className="fab fa-instagram"></i> Instagram
+              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300">
+                <i className="fab fa-youtube"></i>
               </a>
             </div>
           </div>
